@@ -15,5 +15,5 @@ Pass `[text]` as input which you want to toggle.<br />
 Pass `[textLength]` as input, it will allow you to hide text if it is more than `textLength`.<br />
 
 > **Note**: If user doesn't pass `textLength`, by default it will show 20 characters.  
-**In case of issue please open bug at** [Github](https://github.com/alokkarma/nga-read-more/issues)
+**In case of issue please open bug at** [Github](https://github.com/alokkarma/nga-read-more/issues)\
 > Feedback and improvements always welcome.
