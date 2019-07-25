@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "nga-read-more": [
+        "dist/nga-read-more"
+      ],
+      "nga-read-more/*": [
+        "dist/nga-read-more/*"
+      ]
+    }
   }
 }
