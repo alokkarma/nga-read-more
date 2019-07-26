@@ -2,7 +2,7 @@
   "name": "nga-read-more",
   "description": "create read-more link for large text in angular",
   "author": "Alok Vishwakarma <alok.lko631@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -52,7 +52,6 @@
     "typescript": "~3.2.2"
   },
   "keywords": [
-    "angular7",
     "angular",
     "read-more",
     "read-more-less"
