@@ -1,6 +1,7 @@
 # NgaReadMore
 
 Simple module for hide and show text. Based on its lenght provided by user.<br /><br />
+> [Github Repo](https://github.com/alokkarma/nga-read-more)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
 # How to Use
