@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nga-read-more-tester';
+  obj ={prop:1};
 }

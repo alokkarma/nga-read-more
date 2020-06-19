@@ -1,6 +1,8 @@
 {
   "name": "nga-read-more",
-  "version": "0.0.0",
+  "description": "create read-more link for large text in angular",
+  "author": "Alok Vishwakarma <alok.lko631@gmail.com>",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -48,5 +50,12 @@
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  }
+  },
+  "keywords": [
+    "angular",
+    "read-more",
+    "read-more-less"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/alokkarma/nga-read-more"
 }
