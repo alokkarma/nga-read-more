@@ -3,28 +3,33 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'nga-read-more',
   template: `
-  <div>
+  <ng-container>
     <span>{{text}}</span>
-    <a *ngIf="!showOnlyText" style="cursor:pointer;color:#3498db;" (click)="toggleLength()">
+    <a *ngIf="!showOnlyText" [ngStyle]="{'color': linkColor,'cursor': 'pointer'}" (click)="toggleLength()">
       <span *ngIf="!hide">...more</span>
       <span *ngIf="hide">...less</span>
     </a>
-  </div>`,
-  styles: []
+  </ng-container>`
 })
 export class NgaReadMoreComponent implements OnInit {
 
   @Input() text: string;
   @Input() textLength: number;
+  @Input() linkColor:string;
   public showMoreText:string;
   public hide:boolean = true;
   public showOnlyText:boolean = false;
   constructor() { }
 
   ngOnInit() {
-    this.showMoreText = this.text;
-    this.textLength = this.textLength || 20;
-    (this.text.length <= 20 || this.text.length <= this.textLength) ? this.showOnlyText = true : this.toggleLength();
+    if(this.text && typeof this.text === 'string') {
+      this.showMoreText = this.text;
+      this.linkColor = this.linkColor || "#0000ff";
+      this.textLength = this.getLength();
+      (this.text.length <= 20 || this.text.length <= this.textLength) ? this.showOnlyText = true : this.toggleLength();  
+   } else {
+    this.showOnlyText = true;
+   }
   }
   toggleLength() {
     if(this.text.length > this.textLength && this.hide){
@@ -35,5 +40,8 @@ export class NgaReadMoreComponent implements OnInit {
       this.text=this.showMoreText;
     }
   }
-
+ getLength() {
+   if(this.textLength > 0) return this.textLength;
+   return 20;
+ }
 }
