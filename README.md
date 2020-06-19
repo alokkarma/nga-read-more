@@ -20,7 +20,7 @@ Pass `[linkColor]` as input, Customise link color. Default color is `#0000ff`<br
 **In case of issue please open bug at** [Github](https://github.com/alokkarma/nga-read-more/issues)\
 > Feedback and improvements always welcome.
 
-# Update in version 0.0.4
+# Update in version 0.0.6
 - Now you can pass `[linkColor]` as input for changing the link color. By Default it would be blue.
 - Fixed bug for `null` values. In case if `null` value is coming it will not through any error or unexpected behaviour.
 - Bug fix if `textLength` is `0` or `-1`. It will make it as default value 20.
